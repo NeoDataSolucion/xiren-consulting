@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#211c1c" name="theme-color"/>
+<meta content="Xiren Consulting: servicios contables, fiscales, financieros e inmobiliarios con atención personalizada." name="description"/>
+<title>Xiren Consulting | Servicios integrales</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{--brick:#ae4f58;--brick-dark:#8d353f;--ink:#231f20;--cream:#f7f3ef;--paper:#fffdfb;--muted:#746d6d;--line:#e7dfda;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);overflow-x:hidden}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #dd8e96;outline-offset:4px}.container{width:min(1160px,calc(100% - 44px));margin-inline:auto}.top{background:var(--ink);color:#f8eeee;text-align:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px}.header{background:rgba(255,253,251,.94);backdrop-filter:blur(18px);position:sticky;top:0;z-index:60;border-bottom:1px solid var(--line)}.head-inner{min-height:75px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}.brand{font-family:var(--serif);font-size:25px;font-weight:700;letter-spacing:-.04em;white-space:nowrap}.brand small{font-family:var(--sans);display:block;font-size:8px;letter-spacing:.29em;font-weight:700;margin-top:2px;text-align:center;color:var(--brick)}.nav{display:flex;gap:24px;align-items:center;font-size:13px;color:#514a49}.nav a:hover{color:var(--brick)}.head-left{display:flex;align-items:center}.head-actions{display:flex;justify-content:end;gap:10px;align-items:center}.lang{display:flex;border:1px solid var(--line);border-radius:20px;overflow:hidden}.lang button{font-size:11px;border:0;background:transparent;padding:8px 9px;font-weight:700}.lang button.active{background:var(--ink);color:#fff}.menu-btn{display:none;background:transparent;border:0;padding:8px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:100px;padding:15px 24px;font-size:13px;font-weight:700;transition:transform .25s,box-shadow .25s,background .25s;border:1px solid transparent}.btn:hover{transform:translateY(-2px);box-shadow:0 9px 24px #231f2018}.btn-dark{background:var(--ink);color:#fff}.btn-brick{background:var(--brick);color:#fff}.btn-line{border-color:#c6b5ad;background:transparent;color:var(--ink)}.btn svg{width:17px;height:17px;flex-shrink:0}.hero{position:relative;background:var(--cream);overflow:hidden}.hero::before{content:'';position:absolute;width:540px;height:540px;border:1px solid #c58b8f40;border-radius:50%;top:-325px;left:calc(50% - 270px)}.hero::after{content:'';position:absolute;width:650px;height:650px;border:1px solid #c58b8f35;border-radius:50%;bottom:-490px;left:calc(50% - 325px)}.hero-inner{position:relative;z-index:1;text-align:center;padding:86px 0 0}.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--brick-dark);font-weight:700;text-transform:uppercase}.hero h1{font:600 clamp(43px,6vw,81px)/1.15 var(--serif);letter-spacing:-.048em;max-width:920px;margin:22px auto 20px}.hero h1 em{color:var(--brick);font-weight:500}.hero-desc{color:#655c5b;font-size:16px;line-height:1.75;max-width:580px;margin:0 auto 28px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.hero-gallery{display:grid;grid-template-columns:1.1fr 1.55fr 1.1fr;gap:17px;align-items:end;max-width:1030px;margin:65px auto -12px}.photo{position:relative;overflow:hidden;border-radius:140px 140px 10px 10px;background:linear-gradient(135deg,#ddd1c8,#a17a71);box-shadow:0 18px 45px #39272224}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}.photo:hover img{transform:scale(1.055)}.photo-one{height:245px}.photo-main{height:365px;border-radius:190px 190px 10px 10px}.photo-three{height:245px}.photo::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#3e242629,transparent 65%)}.photo .fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff8;font:700 72px var(--serif);z-index:0}.photo img{position:relative;z-index:1}.mini-tag{position:absolute;z-index:2;left:20px;bottom:22px;color:#fff;font-size:11px;letter-spacing:.15em;text-transform:uppercase}.strip{background:var(--ink);color:#eee0de;padding:19px 0}.strip .container{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}.strip span{font-size:11px;letter-spacing:.1em;text-transform:uppercase}.strip i{height:4px;width:4px;background:var(--brick);border-radius:50%}.section{padding:96px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 47px}.section h2{font:600 clamp(34px,4vw,53px)/1.18 var(--serif);letter-spacing:-.035em;margin:15px 0}.section-head p,.text-muted{color:var(--muted);line-height:1.7}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);padding:33px;background:#fff;min-height:290px;display:flex;flex-direction:column;transition:border .25s,transform .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);border-color:#d2a1a5;box-shadow:0 18px 35px #2417180c}.card-num{font-size:12px;letter-spacing:.2em;color:var(--brick);margin-bottom:34px}.card h3{font:600 27px/1.2 var(--serif);margin:0 0 17px}.card p{font-size:14px;line-height:1.75;color:#716968;margin:0 0 21px}.card .card-bottom{margin-top:auto;font-size:12px;color:var(--brick-dark);font-weight:700}.about{background:var(--cream)}.about-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.about-art{min-height:450px;position:relative;background:linear-gradient(145deg,#e9d8ce,#b78b87);overflow:hidden;border-radius:4px}.about-art img{position:absolute;width:100%;height:100%;object-fit:cover}.about-mark{position:absolute;left:-15px;bottom:-18px;width:180px;height:180px;border:20px solid var(--paper);border-radius:50%;opacity:.75;pointer-events:none}.about-inner h2{text-align:left}.about-inner p{color:#665e5d;font-size:15px;line-height:1.85}.ticks{display:grid;gap:12px;margin:24px 0 30px}.ticks div{display:flex;align-items:center;gap:13px;font-size:13px}.ticks b{color:var(--brick)}.process{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.process article{border-top:2px solid var(--brick);padding-top:21px}.process .n{font:500 35px var(--serif);color:var(--brick)}.process h3{font-size:15px;margin:14px 0 10px}.process p{font-size:13px;color:var(--muted);line-height:1.7}.contact{background:var(--brick-dark);color:#fff;text-align:center;padding:88px 0;position:relative;overflow:hidden}.contact::after{content:'§';font:360px var(--serif);position:absolute;right:-25px;bottom:-220px;opacity:.08;pointer-events:none}.contact h2{font:500 clamp(37px,5vw,64px)/1.13 var(--serif);max-width:780px;margin:18px auto}.contact p{max-width:560px;margin:0 auto 28px;color:#f1dadd;line-height:1.7}.contact .btn{background:#fff;color:var(--ink)}.footer{padding:32px 0;background:#1c1919;color:#d4c9c7}.foot-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;font-size:12px}.foot-inner a{color:#eee}.floating-wa{position:fixed;right:23px;bottom:23px;z-index:80;display:flex;gap:8px;align-items:center;color:#fff;background:#218c5e;border-radius:100px;padding:14px 17px;box-shadow:0 8px 26px #0004;font-size:13px;font-weight:700;transition:transform .2s}.floating-wa:hover{transform:translateY(-3px)}.floating-wa svg{height:20px;width:20px}.demo-note{position:fixed;left:14px;bottom:16px;z-index:70;background:#fff;color:#544a49;padding:9px 13px;border:1px solid #e5d7d2;border-radius:8px;font-size:10px;max-width:185px;box-shadow:0 6px 22px #0001}.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}a[aria-disabled="true"]{cursor:not-allowed}.mobile-nav{display:none}
+  @media(max-width:850px){.head-inner{grid-template-columns:1fr auto 1fr}.nav{display:none}.menu-btn{display:block}.mobile-nav.open{display:flex;flex-direction:column;gap:0;padding:0 22px 17px;background:#fff;border-top:1px solid var(--line)}.mobile-nav a{padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}.hero-inner{padding-top:66px}.hero-gallery{gap:8px}.photo-one,.photo-three{height:200px}.photo-main{height:290px}.about-inner{gap:32px}.cards{gap:12px}.card{padding:23px;min-height:290px}.card h3{font-size:24px}}
+  @media(max-width:620px){.container{width:min(100% - 36px,1160px)}.top{font-size:9px}.head-inner{min-height:65px}.brand{font-size:20px}.brand small{font-size:7px}.head-actions .nav-cta{display:none}.hero-inner{padding-top:57px}.hero h1{font-size:clamp(39px,11vw,60px);margin:18px auto}.hero-desc{font-size:14px}.hero-gallery{margin-top:43px;grid-template-columns:.85fr 1.6fr .85fr;gap:7px}.photo-one,.photo-three{height:150px}.photo-main{height:235px}.photo{border-radius:80px 80px 8px 8px}.mini-tag{font-size:8px;left:10px;bottom:11px}.strip .container{justify-content:center;gap:10px 15px}.strip span{font-size:9px}.section{padding:72px 0}.cards,.process{grid-template-columns:1fr}.card{min-height:240px;padding:26px}.card-num{margin-bottom:24px}.about-inner{grid-template-columns:1fr}.about-art{min-height:300px;order:2}.about-content{order:1}.contact{padding:70px 0}.floating-wa{bottom:14px;right:14px;padding:13px 15px;font-size:12px}.demo-note{bottom:72px;left:10px;font-size:9px;max-width:160px}.foot-inner{justify-content:center;text-align:center}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.photo img,.btn{transition:none}}
+  
+/* AUREN · ajustes 18 nov 2026 */
+.lang{border-color:transparent;gap:2px}.lang button{white-space:nowrap;padding:9px 10px;font-size:12px}
+.strip .container{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;text-align:center}.strip span{line-height:1.5}
+.service-icon{display:block;color:var(--brick);font-size:29px;margin:-17px 0 18px;font-family:Georgia,serif;line-height:1}
+.about-tabs-section .about-tabs-wrap{max-width:850px}.about-tabs-section h2{max-width:800px}.about-lead{color:var(--brick-dark)!important;font-weight:700;max-width:570px}.about-tabs{display:flex;gap:28px;border-bottom:1px solid #d8c9c2;margin:27px 0 20px;overflow-x:auto;scrollbar-width:thin}.about-tab{position:relative;flex:0 0 auto;border:0;background:transparent;color:#635957;font-weight:600;font-size:13px;padding:12px 0 16px;transition:color .2s}.about-tab:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--brick);transform:scaleX(0);transform-origin:center;transition:transform .25s ease}.about-tab:hover:after,.about-tab.active:after,.about-tab:focus-visible:after{transform:scaleX(1)}.about-tab.active,.about-tab:hover{color:var(--ink)}.about-panel{border-left:3px solid var(--brick);background:var(--paper);padding:25px 27px;min-height:170px;margin-bottom:28px;animation:tabReveal .28s ease}.about-panel h3{font:600 27px/1.3 var(--serif);margin:0 0 10px}.about-panel p{margin:0!important;font-size:14px!important;line-height:1.85!important}@keyframes tabReveal{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+.realty-section{background:#fffaf7}.realty-carousel{max-width:900px;margin:0 auto}.realty-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;overscroll-behavior-inline:contain}.realty-track::-webkit-scrollbar{display:none}.realty-slide{flex:0 0 100%;scroll-snap-align:start;min-width:0;background:#fff;border:1px solid var(--line)}.realty-slide img{display:block;width:100%;height:clamp(210px,33vw,390px);object-fit:cover;background:#ebe1d9}.realty-slide-body{padding:26px 32px 32px}.realty-number{font-size:11px;letter-spacing:.17em;color:var(--brick)}.realty-slide h3{font:600 clamp(26px,3vw,36px) var(--serif);margin:11px 0}.realty-slide p{font-size:14px;color:var(--muted);line-height:1.75;max-width:690px}.realty-slide a{display:inline-block;color:var(--brick-dark);font-weight:700;font-size:13px;margin-top:8px}.realty-controls{display:flex;align-items:center;justify-content:center;gap:23px;margin-top:21px}.realty-arrow{width:41px;height:41px;border-radius:50%;border:1px solid #dfcfca;background:#fff;color:var(--ink);font-size:20px;transition:background .2s}.realty-arrow:hover{background:#f1e6e2}.realty-dots{display:flex;gap:9px}.realty-dots button{height:9px;width:9px;padding:0;border-radius:50%;background:#dbc5c1;border:0}.realty-dots button.active{background:var(--brick);width:26px;border-radius:8px}.realty-disclaimer{text-align:center;font-size:11px;color:#8b7a75;margin:26px 0 0}
+@media(max-width:620px){.about-tabs{gap:19px}.about-panel{padding:20px;min-height:196px}.realty-slide-body{padding:22px}.realty-slide img{height:240px}.strip .container{gap:10px}.strip span{font-size:8px}.lang button{padding:8px 5px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.about-tab:after,.realty-track{transition:none;scroll-behavior:auto}.about-panel{animation:none}}
+
+/* AUREN 18 Nov — refined about + split realty inquiry */
+.about-polished{position:relative;isolation:isolate;overflow:hidden;background:#f7f2ef}
+.about-polished:before{content:"";position:absolute;inset:0 0 0 58%;background:linear-gradient(90deg,#f7f2ef 0%,rgba(247,242,239,.62) 42%,rgba(247,242,239,.2) 100%),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1100&q=75') center/cover;opacity:.32;z-index:-1;pointer-events:none}
+.about-polished .about-tabs-wrap{max-width:1120px}
+.about-polished .about-content{max-width:870px}
+.about-polished h2{max-width:850px;line-height:1.15}
+.about-polished .about-lead{color:#665c58!important;max-width:760px;font-weight:400}
+.about-polished .about-tabs{max-width:790px;margin:24px 0 18px;gap:38px;scrollbar-width:none}
+.about-polished .about-tabs::-webkit-scrollbar{display:none}
+.about-polished .about-tab{font-weight:500;font-size:14px}
+.about-polished .about-panel{display:flex;align-items:center;gap:24px;max-width:790px;min-height:126px;margin-bottom:24px;padding:20px 28px;border-left:3px solid var(--brick);box-shadow:0 12px 42px rgba(54,35,31,.035);background:rgba(255,255,255,.78)}
+.about-polished .about-symbol{width:70px;min-width:70px;height:70px;display:flex;align-items:center;justify-content:center;color:var(--brick);border-right:1px solid #e5d9d4;padding-right:17px}
+.about-polished .about-symbol svg{width:44px;height:44px}
+.about-polished .about-panel h3{font-size:25px;margin-bottom:4px}
+.about-polished .about-panel p{line-height:1.6!important}
+.about-polished .btn{border-radius:4px;background:var(--brick);padding:14px 24px}
+.realty-container{max-width:1260px}
+.realty-section .section-head{margin-bottom:32px}
+.realty-split{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:28px;align-items:stretch}
+.realty-carousel{position:relative;min-width:0;max-width:none;margin:0}
+.realty-track{height:100%;border-radius:5px;background:#2a2424}
+.realty-slide{position:relative;min-height:410px;border:0;border-radius:5px;overflow:hidden;background:#242021}
+.realty-slide:after{position:absolute;inset:0;content:"";background:linear-gradient(0deg,rgba(22,20,20,.89),rgba(22,20,20,0) 58%);pointer-events:none}
+.realty-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.realty-slide-body{position:absolute;bottom:25px;left:27px;right:27px;z-index:1;padding:0;color:#fff}
+.realty-small-icon{display:inline-flex;font-size:28px;line-height:1;margin-bottom:6px}
+.realty-slide h3{font-size:clamp(24px,2.5vw,32px);color:#fff;margin:4px 0 8px}
+.realty-slide p{color:#f0e8e5;font-size:13px;max-width:420px;margin:0;line-height:1.55}
+.realty-arrow{position:absolute;top:44%;z-index:2;width:39px;height:39px;border:none;background:rgba(255,255,255,.93);box-shadow:0 3px 16px #0002}
+#realtyPrev{left:13px}#realtyNext{right:13px}
+.realty-controls{margin:13px 0 0;gap:0}
+.realty-dots button{height:4px;width:27px;border-radius:5px;background:#dfd3cf}
+.realty-dots button.active{width:34px;background:var(--brick)}
+.realty-disclaimer{margin:14px 0 0;font-size:10px}
+.realty-form-shell{border:1px solid var(--line);padding:clamp(23px,2.8vw,36px);border-radius:5px;background:#fffcfa;display:flex;flex-direction:column}
+.realty-form-shell h3{font:600 clamp(27px,3vw,35px)/1.2 var(--serif);margin:0 0 9px}
+.realty-form-intro{color:var(--muted);font-size:13px;line-height:1.55;margin:0 0 19px}
+#realtyForm{display:flex;flex-direction:column;gap:11px;flex:1}
+.realty-two-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#realtyForm label{display:flex;flex-direction:column;gap:5px;font-size:11px;color:#746762}
+#realtyForm label span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#realtyForm input,#realtyForm select,#realtyForm textarea{width:100%;border:1px solid #dacdc7;border-radius:3px;background:#fff;color:var(--ink);font:400 13px/1.5 var(--sans);padding:11px 12px;min-width:0}
+#realtyForm select{appearance:auto}
+#realtyForm textarea{resize:vertical;min-height:83px}
+#realtyForm input:focus,#realtyForm textarea:focus,#realtyForm select:focus{outline:2px solid var(--brick);outline-offset:2px}
+.realty-submit{align-self:flex-end;background:var(--brick);color:white;border:0;border-radius:4px;padding:12px 20px;font-size:13px;font-weight:700;margin-top:auto;cursor:pointer}
+.realty-submit:hover{filter:brightness(.92)}
+.realty-form-feedback{font-size:12px;color:var(--brick-dark);margin:0;min-height:0}
+.realty-form-privacy{font-size:10px;color:#81716e;margin:14px 0 0;line-height:1.5}
+@media(max-width:800px){.realty-split{grid-template-columns:1fr}.realty-slide{min-height:370px}.realty-form-shell{padding:24px}.about-polished:before{inset:0;background:linear-gradient(90deg,#f7f2efed,#f7f2efe8),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1100&q=75') center/cover}}
+@media(max-width:620px){.about-polished .about-tabs{gap:23px}.about-polished .about-panel{gap:14px;padding:17px;min-height:125px}.about-polished .about-symbol{width:48px;min-width:48px;height:54px;padding-right:10px}.about-polished .about-symbol svg{width:32px}.about-polished .about-panel h3{font-size:23px}.realty-two-fields{grid-template-columns:1fr}.realty-slide{min-height:330px}.realty-slide-body{left:21px;right:20px}.realty-form-shell{padding:21px}.realty-arrow{top:37%}}
+
+/* SVG flag icons render consistently on Windows, Android and iOS. */
+.lang button{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.lang .flag-svg{display:inline-block;flex:none;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.10)}
+@media(max-width:620px){.lang button{gap:4px}.lang .flag-svg{width:21px;height:14px}}
+
+/* Xiren Consulting — contenido específico de la consultoría. */
+.brand{font-size:clamp(20px,2.4vw,27px);letter-spacing:.08em}
+.brand small{letter-spacing:.30em}
+.accounting-detail{background:#fffdfb;border-top:1px solid var(--line)}
+.accounting-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.accounting-detail h2{font:600 clamp(34px,4vw,50px)/1.17 var(--serif);letter-spacing:-.035em;margin:18px 0}
+.accounting-detail .text-muted{font-size:15px;line-height:1.85;max-width:540px;margin:0 0 26px}
+.accounting-services{border-top:1px solid #d7c6c0}
+.acc-feature{display:flex;align-items:center;gap:19px;border-bottom:1px solid #e9e0da;padding:19px 8px}
+.acc-feature span{font-size:11px;letter-spacing:.15em;color:var(--brick-dark);flex:0 0 24px}
+.acc-feature strong{font-weight:500;font-size:15px;line-height:1.45}
+@media(max-width:760px){.accounting-detail-grid{grid-template-columns:1fr;gap:27px}.acc-feature{padding:16px 3px}}
+
+
+/* Xiren · edición final: contenido concentrado, sin numeración ornamental */
+#servicios{padding-block:78px 82px}
+#servicios .section-head{margin-bottom:34px}
+.service-explorer{max-width:1030px;margin-inline:auto}
+.service-tabs{display:flex;justify-content:center;gap:clamp(18px,5vw,72px);border-bottom:1px solid #dacdc7;margin-bottom:30px;overflow-x:auto;scrollbar-width:none}
+.service-tabs::-webkit-scrollbar{display:none}
+.service-tab{background:transparent;border:0;border-bottom:2px solid transparent;padding:14px 4px 17px;color:#726662;white-space:nowrap;font-size:14px;transition:border-color .22s,color .22s;font-weight:500}
+.service-tab:hover,.service-tab:focus-visible,.service-tab.active{border-bottom-color:var(--brick);color:var(--ink)}
+.service-panel{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,6vw,78px);align-items:center;min-height:260px;animation:tabReveal .3s ease}
+.service-category{display:block;color:var(--brick-dark);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:13px;font-weight:700}
+.service-heading h3{font:600 clamp(29px,3.7vw,43px)/1.16 var(--serif);letter-spacing:-.025em;margin:0 0 18px}
+.service-heading p{font-size:15px;line-height:1.85;color:var(--muted);margin:0 0 22px}
+.service-link,.about-text-link{display:inline-flex;color:var(--brick-dark);font-weight:700;font-size:13px;border-bottom:1px solid transparent;padding-bottom:4px}
+.service-link:hover,.about-text-link:hover{border-bottom-color:currentColor}
+.service-capabilities{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;row-gap:0}
+.service-capability{display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid var(--line);padding:14px 0;font-size:13px;color:#4e4542;line-height:1.5}
+.service-capability:before{content:'';flex:none;width:6px;height:6px;background:var(--brick);transform:rotate(45deg);margin-top:7px}
+
+
+
+
+.about-polished{padding-block:82px 78px}
+.about-polished .about-tabs{margin:26px 0 21px}
+.about-polished .about-panel{display:block!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:6px 0 0!important;margin-bottom:0!important;min-height:125px!important;max-width:700px!important}
+.about-polished .about-panel h3{font:600 clamp(27px,3.2vw,38px)/1.18 var(--serif);margin:0 0 12px;letter-spacing:-.02em}
+.about-polished .about-panel p{font-size:15px!important;line-height:1.85!important;max-width:660px}
+.about-polished .about-text-link{margin-top:17px}
+.process .n,.card-num,.realty-number{display:none!important}
+.process article{border-top:1px solid #d9c8c1;padding-top:16px}
+.process h3{margin-top:0}
+@media(max-width:760px){.service-panel{grid-template-columns:1fr;gap:17px}.service-tabs{justify-content:flex-start}.service-capabilities{grid-template-columns:1fr 1fr}.about-polished .about-panel{min-height:150px!important}}
+@media(max-width:480px){.service-capabilities{grid-template-columns:1fr}.service-tab{font-size:12px}.service-tabs{gap:21px}.about-polished{padding-block:66px}.service-panel{min-height:0}}
+@media(prefers-reduced-motion:reduce){.service-panel{animation:none}}
+
+.legal-footer-links{display:flex;gap:15px;flex-wrap:wrap;font-size:12px}
+.legal-footer-links a{text-decoration:underline;text-underline-offset:4px}
+.legal-ack{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:var(--muted);line-height:1.55;margin:10px 0 5px}
+.legal-ack input{width:17px;height:17px;flex:0 0 auto;accent-color:var(--brick-dark);margin-top:1px}
+.legal-ack a{color:var(--brick-dark);text-decoration:underline;text-underline-offset:2px}
+
+/* Aviso informativo de privacidad/cookies: no representa consentimiento para rastreo. */
+.privacy-notice{position:fixed;left:16px;bottom:16px;width:min(405px,calc(100vw - 40px));z-index:110;background:#fffdfb;border:1px solid #e7dbd6;border-top:3px solid var(--brick);border-radius:9px;padding:22px 22px 18px;box-shadow:0 16px 55px #231f2030;display:none;line-height:1.5}
+.privacy-notice.is-visible{display:block;animation:noticeUp .26s ease-out}
+.privacy-notice-head{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.privacy-notice-symbol{color:var(--brick-dark);width:19px;height:19px;flex:none}
+.privacy-notice h2{font:600 20px/1.2 var(--serif);margin:0;color:var(--ink)}
+.privacy-notice p{font-size:12px;line-height:1.7;color:#675d5a;margin:9px 0 14px}
+.privacy-notice-links{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 17px}
+.privacy-notice-links a{font-size:12px;color:var(--brick-dark);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.privacy-notice-actions{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.privacy-notice-actions span{font-size:10px;color:#817571}
+.privacy-notice-dismiss{border:0;background:var(--brick-dark);border-radius:5px;padding:10px 18px;color:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.privacy-notice-dismiss:hover{background:var(--ink)}
+.footer .privacy-reopen{background:none;border:0;color:#eee;text-decoration:underline;text-underline-offset:4px;padding:0;cursor:pointer;font-size:12px}
+@keyframes noticeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:620px){.privacy-notice{left:12px;right:12px;bottom:12px;width:auto;max-height:calc(100dvh - 24px);overflow:auto;padding:17px 17px 15px}.privacy-notice h2{font-size:19px}.privacy-notice p{font-size:12px}.privacy-notice-actions span{max-width:58%}}
+@media(prefers-reduced-motion:reduce){.privacy-notice.is-visible{animation:none}}
+
+
+/* Identidad provisional XC: monograma unido, sin barras decorativas */
+.brand-mark{display:inline-flex;align-items:center;gap:7px;text-decoration:none;min-width:0}
+.brand-mark .brand-icon{width:51px;height:47px;flex:none;object-fit:contain}
+.brand-mark .brand-name{font:700 20px/1 var(--serif,Georgia,serif);letter-spacing:.055em;color:var(--ink,#231f20)}
+.brand-mark .brand-name small{display:block;font:600 8px/1.5 var(--sans,Arial,sans-serif);letter-spacing:.24em;text-align:center;color:var(--brick,#a5414a);margin-top:4px}
+.footer-brand{display:inline-flex;align-items:center;gap:8px}
+.footer-brand img{height:34px;width:39px;object-fit:contain}
+.footer-brand .footer-brand-text{font:600 15px/1.2 Georgia,serif;letter-spacing:.12em;color:#fff}
+.footer-brand .footer-brand-text small{display:block;font:600 8px/1.3 Arial,sans-serif;letter-spacing:.2em;color:#dfb9ba;margin-top:3px}
+@media(max-width:560px){.brand-mark .brand-icon{width:36px;height:34px}.brand-mark .brand-name{font-size:16px}.brand-mark .brand-name small{font-size:7px}.head-inner{gap:5px}}
+
+/* Refinamiento final: pie legal a la izquierda, sin etiquetas de demostración */
+.foot-final{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:24px;row-gap:18px}
+.foot-final .legal-footer-links{justify-content:flex-start;gap:10px 17px}
+.foot-final .footer-brand{justify-self:center}
+.foot-final .footer-meta{display:flex;gap:8px;align-items:center;justify-self:end;white-space:nowrap;color:#ded1cd}
+.form-privacy-disclosure{font-size:12px;line-height:1.55;color:var(--muted);margin:11px 0 12px}
+.form-privacy-disclosure a{font-weight:700;color:var(--brick-dark);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:950px){.foot-final{grid-template-columns:1fr 1fr}.foot-final .legal-footer-links{grid-column:1/-1;grid-row:1}.foot-final .footer-brand{justify-self:start}.foot-final .footer-meta{justify-self:end}}
+@media(max-width:560px){.foot-final{grid-template-columns:1fr;gap:18px}.foot-final .legal-footer-links{grid-column:1;grid-row:auto}.foot-final .footer-brand,.foot-final .footer-meta{justify-self:start}.foot-final .footer-meta{white-space:normal}}
+
+/* Identidad XC elegida: marca real extraída de la lámina aprobada. */
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;min-width:0}
+.xiren-logo-header{display:block;width:178px;height:55px;object-fit:contain;object-position:center}
+.footer-brand .xiren-logo-footer{display:block;width:164px;height:49px;object-fit:contain;object-position:left center}
+@media(max-width:720px){.xiren-logo-header{width:143px;height:45px}.footer-brand .xiren-logo-footer{width:142px;height:43px}}
+@media(max-width:420px){.xiren-logo-header{width:118px;height:40px}}
+</style>
+<link rel="icon" href="assets/favicon.png" type="image/png"></head>
+<body>
+<header class="header">
+<div class="container head-inner">
+<div class="head-left"><button aria-expanded="false" aria-label="Abrir menú" class="menu-btn" id="menuBtn"><svg fill="none" height="24" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button><nav aria-label="Principal" class="nav"><a data-i18n="navHome" href="#inicio">Inicio</a><a data-i18n="navServices" href="#servicios">Servicios</a><a data-i18n="navAbout" href="#nosotros">Nosotros</a></nav></div>
+<a aria-label="Xiren Consulting, volver al inicio" class="brand-mark" href="#inicio"><img class="xiren-logo-header" src="assets/xiren-logo-oficial.png" alt="Xiren Consulting" width="186" height="58"></a>
+<div class="head-actions"><div aria-label="Idioma" class="lang"><button aria-label="Español (México)" aria-pressed="true" class="active" data-lang="es"><svg class="flag-svg" viewBox="0 0 30 20" width="23" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect width="10" height="20" x="0" fill="#006847"/><rect width="10" height="20" x="10" fill="#fff"/><rect width="10" height="20" x="20" fill="#CE1126"/><circle cx="15" cy="10" r="2.6" fill="#8B6B34"/><path d="M12 11 Q15 15 18 11" stroke="#3D783E" stroke-width="1" fill="none"/></svg><span>ES</span></button><button aria-label="English (United States)" aria-pressed="false" data-lang="en"><svg class="flag-svg" viewBox="0 0 38 20" width="25" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect width="38" height="20" fill="#fff"/><rect y="0.0000" width="38" height="1.5385" fill="#B22234"/><rect y="3.0769" width="38" height="1.5385" fill="#B22234"/><rect y="6.1538" width="38" height="1.5385" fill="#B22234"/><rect y="9.2308" width="38" height="1.5385" fill="#B22234"/><rect y="12.3077" width="38" height="1.5385" fill="#B22234"/><rect y="15.3846" width="38" height="1.5385" fill="#B22234"/><rect y="18.4615" width="38" height="1.5385" fill="#B22234"/><rect width="15.2" height="10.77" fill="#3C3B6E"/><circle cx="1.40" cy="0.95" r=".37" fill="white"/><circle cx="3.90" cy="0.95" r=".37" fill="white"/><circle cx="6.40" cy="0.95" r=".37" fill="white"/><circle cx="8.90" cy="0.95" r=".37" fill="white"/><circle cx="11.40" cy="0.95" r=".37" fill="white"/><circle cx="13.90" cy="0.95" r=".37" fill="white"/><circle cx="2.60" cy="2.03" r=".37" fill="white"/><circle cx="5.10" cy="2.03" r=".37" fill="white"/><circle cx="7.60" cy="2.03" r=".37" fill="white"/><circle cx="10.10" cy="2.03" r=".37" fill="white"/><circle cx="12.60" cy="2.03" r=".37" fill="white"/><circle cx="1.40" cy="3.11" r=".37" fill="white"/><circle cx="3.90" cy="3.11" r=".37" fill="white"/><circle cx="6.40" cy="3.11" r=".37" fill="white"/><circle cx="8.90" cy="3.11" r=".37" fill="white"/><circle cx="11.40" cy="3.11" r=".37" fill="white"/><circle cx="13.90" cy="3.11" r=".37" fill="white"/><circle cx="2.60" cy="4.19" r=".37" fill="white"/><circle cx="5.10" cy="4.19" r=".37" fill="white"/><circle cx="7.60" cy="4.19" r=".37" fill="white"/><circle cx="10.10" cy="4.19" r=".37" fill="white"/><circle cx="12.60" cy="4.19" r=".37" fill="white"/><circle cx="1.40" cy="5.27" r=".37" fill="white"/><circle cx="3.90" cy="5.27" r=".37" fill="white"/><circle cx="6.40" cy="5.27" r=".37" fill="white"/><circle cx="8.90" cy="5.27" r=".37" fill="white"/><circle cx="11.40" cy="5.27" r=".37" fill="white"/><circle cx="13.90" cy="5.27" r=".37" fill="white"/><circle cx="2.60" cy="6.35" r=".37" fill="white"/><circle cx="5.10" cy="6.35" r=".37" fill="white"/><circle cx="7.60" cy="6.35" r=".37" fill="white"/><circle cx="10.10" cy="6.35" r=".37" fill="white"/><circle cx="12.60" cy="6.35" r=".37" fill="white"/><circle cx="1.40" cy="7.43" r=".37" fill="white"/><circle cx="3.90" cy="7.43" r=".37" fill="white"/><circle cx="6.40" cy="7.43" r=".37" fill="white"/><circle cx="8.90" cy="7.43" r=".37" fill="white"/><circle cx="11.40" cy="7.43" r=".37" fill="white"/><circle cx="13.90" cy="7.43" r=".37" fill="white"/><circle cx="2.60" cy="8.51" r=".37" fill="white"/><circle cx="5.10" cy="8.51" r=".37" fill="white"/><circle cx="7.60" cy="8.51" r=".37" fill="white"/><circle cx="10.10" cy="8.51" r=".37" fill="white"/><circle cx="12.60" cy="8.51" r=".37" fill="white"/><circle cx="1.40" cy="9.59" r=".37" fill="white"/><circle cx="3.90" cy="9.59" r=".37" fill="white"/><circle cx="6.40" cy="9.59" r=".37" fill="white"/><circle cx="8.90" cy="9.59" r=".37" fill="white"/><circle cx="11.40" cy="9.59" r=".37" fill="white"/><circle cx="13.90" cy="9.59" r=".37" fill="white"/></svg><span>EN</span></button></div><a class="btn btn-dark nav-cta" data-i18n="navContact" href="#contacto" style="padding:11px 17px;font-size:12px">Contacto</a></div>
+</div>
+<nav aria-label="Menú móvil" class="mobile-nav" id="mobileNav"><a data-i18n="navHome" href="#inicio">Inicio</a><a data-i18n="navServices" href="#servicios">Servicios</a><a data-i18n="navAbout" href="#nosotros">Nosotros</a><a data-i18n="navContact" href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="container hero-inner">
+<div class="eyebrow reveal" data-i18n="heroLabel">JURÍDICO · CONTABLE · FISCAL · FINANCIERO · INMOBILIARIO</div>
+<h1 class="reveal" data-i18n-html="heroTitle">Decisiones importantes merecen <em>asesoría clara.</em></h1>
+<p class="hero-desc reveal" data-i18n="heroDesc">Un espacio para escuchar tus necesidades y acompañarte con soluciones profesionales, cercanas y a tu medida.</p>
+<div class="hero-actions reveal"><a class="btn btn-brick" data-i18n="cta" href="#contacto">Hablemos de tu consulta <span aria-hidden="true">↗</span></a><a class="btn btn-line" data-i18n="explore" href="#servicios">Explorar servicios ↓</a></div>
+<div class="hero-gallery reveal">
+<div class="photo photo-one"><div class="fallback">01</div><img alt="Espacio de trabajo profesional" loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=650&amp;q=85"/><span class="mini-tag" data-i18n="galleryOne">Confianza</span></div>
+<div class="photo photo-main"><div class="fallback">02</div><img alt="Oficina contemporánea luminosa" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1000&amp;q=85"/><span class="mini-tag" data-i18n="galleryMain">Cercanía</span></div>
+<div class="photo photo-three"><div class="fallback">03</div><img alt="Sala de trabajo" loading="lazy" src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=650&amp;q=85"/><span class="mini-tag" data-i18n="galleryThree">Compromiso</span></div>
+</div>
+</div>
+</section>
+<div class="strip"><div class="container"><span data-i18n="strip1">Atención personalizada</span><span data-i18n="strip2">Claridad en cada paso</span><span data-i18n="strip3">Soluciones a tu medida</span></div></div>
+<section class="section" id="servicios"><div class="container">
+<div class="section-head reveal"><div class="eyebrow" data-i18n="servicesLabel">NUESTRAS ÁREAS</div><h2 data-i18n="servicesTitle">Un mismo espacio, distintas soluciones.</h2><p data-i18n="servicesDesc">Conoce nuestras líneas de atención y encuentra el primer paso para resolver tu consulta.</p></div>
+<div class="service-explorer reveal">
+  <div class="service-tabs" role="tablist" aria-label="Áreas de atención">
+    <button type="button" class="service-tab" role="tab" id="service-tab-0" data-service-tab="0" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-i18n="serviceTabLegal">Jurídicos</button>
+    <button type="button" class="service-tab active" role="tab" id="service-tab-1" data-service-tab="1" aria-selected="true" aria-controls="service-panel" tabindex="0" data-i18n="serviceTabAccounting">Contables y fiscales</button>
+    <button type="button" class="service-tab" role="tab" id="service-tab-2" data-service-tab="2" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-i18n="serviceTabRealty">Inmobiliarios</button>
+  </div>
+  <div id="service-panel" role="tabpanel" aria-labelledby="service-tab-1" tabindex="0" aria-live="polite" class="service-panel">
+    <div class="service-heading"><span class="service-category" id="service-subtitle">Organización y crecimiento</span><h3 id="service-title">Servicios contables, fiscales y financieros</h3><p id="service-description">Ayudamos a personas físicas y morales a cumplir sus obligaciones fiscales, organizar sus operaciones y gestionar sus recursos con información clara y análisis estratégico.</p><a class="service-link" id="service-link" href="#contacto">Solicitar orientación ↗</a></div>
+    <div class="service-capabilities" id="service-capabilities" aria-label="Servicios incluidos"></div>
+  </div>
+</div>
+</div></section>
+
+<section class="section about about-tabs-section about-polished" id="nosotros"><div class="container about-tabs-wrap">
+<div class="about-content reveal"><div class="eyebrow" data-i18n="aboutLabel">ACERCA DE NOSOTROS</div><h2 data-i18n="aboutTitle">Soluciones integrales para proteger, administrar y hacer crecer tu patrimonio.</h2><p class="about-lead" data-i18n="aboutDesc">Tu patrimonio, tus proyectos y tus objetivos merecen una gestión profesional.</p>
+<div aria-label="Información del despacho" class="about-tabs" role="tablist">
+<button aria-controls="about-panel" aria-selected="true" class="about-tab active" data-about-index="0" data-i18n="aboutTab1" id="about-tab-0" role="tab" tabindex="0" type="button">Quiénes somos</button>
+<button aria-controls="about-panel" aria-selected="false" class="about-tab" data-about-index="1" data-i18n="aboutTab2" id="about-tab-1" role="tab" tabindex="-1" type="button">Nuestro enfoque</button>
+<button aria-controls="about-panel" aria-selected="false" class="about-tab" data-about-index="2" data-i18n="aboutTab3" id="about-tab-2" role="tab" tabindex="-1" type="button">Compromiso</button>
+</div>
+<div aria-labelledby="about-tab-0" aria-live="polite" class="about-panel" id="about-panel" role="tabpanel" tabindex="0">
+  <h3 id="about-panel-title">Una visión integral y cercana.</h3>
+  <p id="about-panel-copy">Xiren Consulting reúne servicios profesionales para acompañar a personas y negocios con claridad y atención personalizada.</p>
+  <a class="about-text-link" data-i18n="aboutExplore" href="#servicios">Conoce nuestros servicios ↗</a>
+</div>
+</div>
+</div></section>
+<section class="section realty-section" id="inmobiliaria"><div class="container realty-container">
+<div class="section-head reveal"><div class="eyebrow" data-i18n="realtyLabel">SERVICIOS INMOBILIARIOS</div><h2 data-i18n="realtyHeading">Espacios, oportunidades y nuevas posibilidades.</h2><p data-i18n="realtyIntro">Te acompañamos en la compra, venta y administración de inmuebles con transparencia y atención personalizada.</p></div>
+<div class="realty-split"><div aria-label="Servicios inmobiliarios" aria-roledescription="carrusel" class="realty-carousel reveal">
+<div class="realty-track" id="realtyTrack">
+<article aria-roledescription="diapositiva" class="realty-slide" data-service="venta"><img alt="Imagen arquitectónica ilustrativa para venta de inmuebles" loading="lazy" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1100&amp;q=85"/><div class="realty-slide-body"><span aria-hidden="true" class="realty-small-icon">⌂</span><h3 data-i18n="realtySlide1Title">Venta de inmuebles</h3><p data-i18n="realtySlide1Desc">Acompañamiento durante las distintas etapas de venta de un inmueble.</p></div></article>
+<article aria-roledescription="diapositiva" class="realty-slide" data-service="compra"><img alt="Interior residencial ilustrativo para compra de inmuebles" loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100&amp;q=85"/><div class="realty-slide-body"><span aria-hidden="true" class="realty-small-icon">⌂</span><h3 data-i18n="realtySlide2Title">Compra de inmuebles</h3><p data-i18n="realtySlide2Desc">Orientación para tomar decisiones informadas al comprar un inmueble.</p></div></article>
+<article aria-roledescription="diapositiva" class="realty-slide" data-service="administracion"><img alt="Oficina ilustrativa para administración inmobiliaria" loading="lazy" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1100&amp;q=85"/><div class="realty-slide-body"><span aria-hidden="true" class="realty-small-icon">⌂</span><h3 data-i18n="realtySlide3Title">Administración de inmuebles</h3><p data-i18n="realtySlide3Desc">Gestión de intereses inmobiliarios con profesionalismo y transparencia.</p></div></article>
+</div>
+<div class="realty-controls"><div aria-label="Seleccionar diapositiva" class="realty-dots" id="realtyDots"><button aria-current="true" aria-label="Diapositiva 1" class="active" data-slide="0"></button><button aria-label="Diapositiva 2" data-slide="1"></button><button aria-label="Diapositiva 3" data-slide="2"></button></div></div>
+<button aria-label="Anterior" class="realty-arrow" id="realtyPrev" type="button">←</button><button aria-label="Siguiente" class="realty-arrow" id="realtyNext" type="button">→</button></div><aside aria-labelledby="realtyFormHeading" class="realty-form-shell reveal">
+<h3 data-i18n="realtyFormHeading" id="realtyFormHeading">Solicita información</h3>
+<p class="realty-form-intro" data-i18n="realtyFormIntro">Cuéntanos qué necesitas y prepararemos tu mensaje para contactar al despacho.</p>
+<form id="realtyForm">
+<div class="realty-two-fields">
+<label><span data-i18n="formName">Nombre completo</span><input autocomplete="name" data-i18n-placeholder="formName" maxlength="100" name="name" placeholder="Nombre completo" required="" type="text"/></label>
+<label><span data-i18n="formPhone">Teléfono</span><input autocomplete="tel" data-i18n-placeholder="formPhone" maxlength="25" name="phone" placeholder="Teléfono" required="" type="tel"/></label>
+</div>
+<label><span data-i18n="formService">Servicio de interés</span><select name="service" required=""><option data-i18n="formServicePlaceholder" value="">Selecciona un servicio</option><option data-i18n="formSale" value="venta">Venta de inmuebles</option><option data-i18n="formBuy" value="compra">Compra de inmuebles</option><option data-i18n="formManage" value="administracion">Administración de inmuebles</option></select></label>
+<label><span data-i18n="formMessage">Mensaje (opcional)</span><textarea data-i18n-placeholder="formMessage" maxlength="700" name="message" placeholder="Cuéntanos brevemente qué necesitas" rows="3"></textarea></label>
+<button class="realty-submit" data-i18n="formSubmit" type="submit">Continuar por WhatsApp ↗</button>
+<p aria-live="polite" class="realty-form-feedback" id="realtyFormFeedback" role="status"></p>
+</form>
+<p class="realty-form-privacy" data-i18n="formPrivacy">Esta página prepara tu mensaje sin guardarlo en una base de datos propia. WhatsApp tratará la información que decidas enviar según sus condiciones y políticas.</p>
+</aside></div>
+<p class="realty-disclaimer" data-i18n="realtyDisclaimer">Imágenes ilustrativas. No representan inmuebles disponibles.</p>
+</div></section>
+<section class="section"><div class="container"><div class="section-head reveal"><div class="eyebrow" data-i18n="processLabel">CÓMO COMENZAR</div><h2 data-i18n="processTitle">Un proceso sencillo.</h2></div><div class="process"><article class="reveal"><h3 data-i18n="step1title">Escríbenos</h3><p data-i18n="step1desc">Cuéntanos brevemente qué tipo de atención estás buscando.</p></article><article class="reveal"><h3 data-i18n="step2title">Revisamos tu solicitud</h3><p data-i18n="step2desc">Identificamos el área correspondiente y los siguientes pasos.</p></article><article class="reveal"><h3 data-i18n="step3title">Coordinamos la atención</h3><p data-i18n="step3desc">Te compartimos cómo continuar, según la disponibilidad del servicio.</p></article></div></div></section>
+<section class="contact" id="contacto"><div class="container reveal"><div class="eyebrow" data-i18n="contactLabel" style="color:#f2c8cb">ESTAMOS PARA ESCUCHARTE</div><h2 data-i18n="contactTitle">Una conversación puede ser el primer paso.</h2><p data-i18n="contactDesc">¿Tienes alguna pregunta? Escríbenos y conoce las opciones de atención disponibles.</p><a aria-disabled="true" class="btn" data-i18n="contactCTA" href="#" id="waCta">Contactar por WhatsApp ↗</a></div></section>
+</main>
+<footer class="footer"><div class="container foot-inner foot-final">
+<nav class="legal-footer-links" aria-label="Información legal"><a href="privacidad.html" data-i18n="legalPrivacy">Aviso de privacidad</a><a href="cookies.html" data-i18n="legalCookies">Uso de cookies</a><a href="terminos.html" data-i18n="legalTerms">Términos de uso</a><button class="privacy-reopen" id="privacyReopen" type="button" data-i18n="privacyReopen">Ver avisos</button></nav>
+<a href="#inicio" aria-label="Xiren Consulting, volver al inicio" class="footer-brand"><img class="xiren-logo-footer" src="assets/xiren-logo-oscuro.png" alt="Xiren Consulting" width="171" height="48"></a>
+<div class="footer-meta"><a data-i18n="backToTop" href="#inicio">Volver al inicio ↑</a><span aria-hidden="true">·</span> <span id="year"></span></div>
+</div></footer>
+<a aria-disabled="true" class="floating-wa" href="#contacto" id="waFloat"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .9a11 11 0 0 0-9.47 16.6L1 23l5.69-1.5A11 11 0 1 0 12 .9Zm0 20a8.95 8.95 0 0 1-4.56-1.25l-.33-.2-3.37.9.9-3.28-.22-.34A9 9 0 1 1 12 20.9Zm5-6.75c-.28-.15-1.64-.81-1.9-.9-.25-.1-.43-.15-.61.14-.18.28-.7.9-.86 1.09-.16.19-.32.21-.59.07-.28-.14-1.17-.43-2.23-1.37-.83-.73-1.38-1.64-1.54-1.92-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.17.19-.29.28-.47.09-.19.05-.35-.02-.5-.07-.14-.62-1.48-.84-2.03-.22-.53-.44-.45-.6-.46H8.1c-.2 0-.5.07-.76.35-.26.29-.99.96-.99 2.33s1.01 2.7 1.15 2.9c.14.19 1.99 3.04 4.82 4.26.67.29 1.2.46 1.61.58.68.22 1.3.19 1.8.12.54-.08 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.26-.2-.54-.35Z"></path></svg><span data-i18n="waFloat">WhatsApp</span></a>
+<aside id="privacyNotice" class="privacy-notice" role="region" aria-labelledby="privacyNoticeTitle" aria-live="off" hidden>
+ <div class="privacy-notice-head"><svg class="privacy-notice-symbol" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><h2 id="privacyNoticeTitle" data-i18n="privacyNoticeTitle">Nuestro aviso de privacidad</h2></div>
+ <p data-i18n="privacyNoticeBody">Este sitio incluye un formulario que prepara tu consulta para WhatsApp y utiliza recursos externos para mostrar imágenes y tipografías. Consulta cómo tratamos la información y qué tecnologías utiliza el sitio.</p>
+ <nav class="privacy-notice-links" aria-label="Documentos de privacidad"><a href="privacidad.html" data-i18n="legalPrivacy">Aviso de privacidad</a><a href="cookies.html" data-i18n="legalCookies">Uso de cookies</a></nav>
+ <div class="privacy-notice-actions"><span data-i18n="privacyNoticeHint">Este aviso es informativo; no activa rastreadores.</span><button type="button" class="privacy-notice-dismiss" id="privacyNoticeDismiss" data-i18n="privacyNoticeDismiss">Entendido</button></div>
+</aside>
+
+<script>
+const T={es:{top:'Propuesta de demostración · Sitio de consultoría',navHome:'Inicio',navServices:'Servicios',navAbout:'Nosotros',navContact:'Contacto',heroLabel:'JURÍDICO · CONTABLE · INMOBILIARIO',heroTitle:'Decisiones importantes merecen <em>asesoría clara.</em>',heroDesc:'Un espacio para escuchar tus necesidades y acompañarte con soluciones profesionales, cercanas y a tu medida.',cta:'Hablemos de tu consulta ↗',explore:'Explorar servicios ↓',galleryOne:'Confianza',galleryMain:'Cercanía',galleryThree:'Compromiso',strip1:'Atención personalizada',strip2:'Claridad en cada paso',strip3:'Soluciones a tu medida',servicesLabel:'NUESTRAS ÁREAS',servicesTitle:'Un mismo espacio, distintas soluciones.',servicesDesc:'Conoce nuestras líneas de atención y encuentra el primer paso para resolver tu consulta.',legalTitle:'Servicios jurídicos',legalDesc:'Información y acompañamiento legal para comprender tus opciones y avanzar con mayor claridad.',accountingTitle:'Servicios contables',accountingDesc:'Orientación en temas contables para personas y negocios. El alcance se define según cada necesidad.',realtyTitle:'Servicios inmobiliarios',realtyDesc:'Atención relacionada con asuntos inmobiliarios, con una comunicación clara y personalizada.',cardMore:'Consultar disponibilidad ↗',aboutLabel:'ACERCA DE NOSOTROS',aboutTitle:'Escuchar primero. Orientar con claridad.',aboutDesc:'Creemos que una buena atención comienza por comprender cada situación. Nuestro enfoque busca ofrecer una experiencia clara, accesible y cercana desde el primer contacto.',aboutPoint1:'Comunicación directa',aboutPoint2:'Atención a necesidades específicas',aboutPoint3:'Información comprensible',aboutCTA:'Ponerte en contacto ↗',processLabel:'CÓMO COMENZAR',processTitle:'Un proceso sencillo.',step1title:'Escríbenos',step1desc:'Cuéntanos brevemente qué tipo de atención estás buscando.',step2title:'Revisamos tu solicitud',step2desc:'Identificamos el área correspondiente y los siguientes pasos.',step3title:'Coordinamos la atención',step3desc:'Te compartimos cómo continuar, según la disponibilidad del servicio.',contactLabel:'ESTAMOS PARA ESCUCHARTE',contactTitle:'Una conversación puede ser el primer paso.',contactDesc:'¿Tienes alguna pregunta? Escríbenos y conoce las opciones de atención disponibles.',contactCTA:'Contactar por WhatsApp ↗',demo:'Demostración AUREN, identidad provisional',backToTop:'Volver al inicio ↑',waFloat:'WhatsApp',demoNote:'DEMO AUREN · Nombre, imágenes y datos provisionales. WhatsApp sin conectar.'},en:{top:'Design preview · Consulting website',navHome:'Home',navServices:'Services',navAbout:'About us',navContact:'Contact',heroLabel:'LEGAL · ACCOUNTING · REAL ESTATE',heroTitle:'Important decisions deserve <em>clear guidance.</em>',heroDesc:'A place to understand your needs and provide professional, approachable support tailored to you.',cta:'Let’s talk ↗',explore:'Explore services ↓',galleryOne:'Trust',galleryMain:'Connection',galleryThree:'Commitment',strip1:'Personalized attention',strip2:'Clarity at every step',strip3:'Solutions tailored to you',servicesLabel:'OUR PRACTICE AREAS',servicesTitle:'One place, different solutions.',servicesDesc:'Explore our areas of service and discover your next step.',legalTitle:'Legal services',legalDesc:'Legal information and support to understand your options and make decisions with clarity.',accountingTitle:'Accounting services',accountingDesc:'Guidance on accounting matters for individuals and businesses. Scope depends on your needs.',realtyTitle:'Real estate services',realtyDesc:'Assistance with real estate matters through clear and personalized communication.',cardMore:'Ask about availability ↗',aboutLabel:'ABOUT US',aboutTitle:'Listen first. Guide with clarity.',aboutDesc:'We believe good service starts with understanding every situation. Our approach prioritizes clear, approachable communication from the first contact.',aboutPoint1:'Direct communication',aboutPoint2:'Attention to specific needs',aboutPoint3:'Easy-to-understand information',aboutCTA:'Get in touch ↗',processLabel:'GETTING STARTED',processTitle:'A simple process.',step1title:'Send a message',step1desc:'Tell us briefly what type of assistance you are looking for.',step2title:'We review your request',step2desc:'We identify the relevant service area and next steps.',step3title:'We coordinate',step3desc:'We explain how to proceed depending on service availability.',contactLabel:'WE ARE HERE TO LISTEN',contactTitle:'One conversation can be the first step.',contactDesc:'Have a question? Get in touch and learn about available options.',contactCTA:'Contact us on WhatsApp ↗',demo:'AUREN demo, placeholder identity',backToTop:'Back to top ↑',waFloat:'WhatsApp',demoNote:'AUREN DEMO · Placeholder name, imagery and content. WhatsApp not connected.'}};
+
+Object.assign(T.es,{aboutTitle:'Soluciones integrales para proteger, administrar y hacer crecer tu patrimonio.',aboutDesc:'Tu patrimonio, tus proyectos y tus objetivos merecen una gestión profesional.',aboutTab1:'Quiénes somos',aboutTab2:'Nuestro enfoque',aboutTab3:'Compromiso',realtyLabel:'SERVICIOS INMOBILIARIOS',realtyHeading:'Espacios, oportunidades y nuevas posibilidades.',realtyIntro:'Conoce nuestros servicios inmobiliarios y recibe atención personalizada.',realtySlide1Title:'Venta de inmuebles',realtySlide1Desc:'Orientación y acompañamiento para quienes buscan comprar o vender una propiedad.',realtySlide1CTA:'Consultar por WhatsApp ↗',realtySlide2Title:'Renta de inmuebles',realtySlide2Desc:'Atención para quienes buscan opciones de arrendamiento y orientación durante el proceso.',realtySlide2CTA:'Solicitar información ↗',realtySlide3Title:'Asesoría inmobiliaria',realtySlide3Desc:'Acompañamiento personalizado para resolver dudas y explorar alternativas inmobiliarias.',realtySlide3CTA:'Hablar con un asesor ↗',realtyDisclaimer:'Imágenes ilustrativas. No representan inmuebles disponibles.'});
+Object.assign(T.en,{aboutTitle:'Comprehensive solutions to protect, manage and grow your assets.',aboutDesc:'Your assets, projects and goals deserve professional management.',aboutTab1:'Who we are',aboutTab2:'Our approach',aboutTab3:'Commitment',realtyLabel:'REAL ESTATE SERVICES',realtyHeading:'Spaces, opportunities and new possibilities.',realtyIntro:'Explore our real estate services and receive personalized assistance.',realtySlide1Title:'Property sales',realtySlide1Desc:'Guidance and support for those looking to buy or sell a property.',realtySlide1CTA:'Ask on WhatsApp ↗',realtySlide2Title:'Property rentals',realtySlide2Desc:'Assistance for those exploring rental options and guidance throughout the process.',realtySlide2CTA:'Request information ↗',realtySlide3Title:'Real estate advisory',realtySlide3Desc:'Personalized support to answer questions and explore real estate options.',realtySlide3CTA:'Talk to an advisor ↗',realtyDisclaimer:'Illustrative images. These are not available property listings.'});
+
+// Text reviewed from Cristina's supplied service descriptions. The firm name remains provisional.
+Object.assign(T.es,{
+ top:'Xiren Consulting · Presentación preliminar',
+ heroLabel:'CONTABILIDAD · FISCAL · FINANZAS · INMOBILIARIA',
+ heroDesc:'Servicios profesionales para personas y empresas, con atención cercana y soluciones orientadas a la organización y protección de su patrimonio.',
+ accountingTitle:'Servicios contables, fiscales y financieros',
+ accountingDesc:'Soluciones integrales para personas físicas y morales, desde el cumplimiento tributario hasta la gestión financiera.',
+ realtyDesc:'Acompañamiento en compra, venta y administración de inmuebles, con profesionalismo y transparencia.',
+ accLabel:'CONTABILIDAD · FISCAL · FINANZAS',accHeading:'Información clara. Decisiones con fundamento.',
+ accIntro:'En Xiren Consulting ofrecemos servicios contables, fiscales y financieros para personas físicas y morales. Combinamos atención personalizada, organización y análisis estratégico para apoyar el cumplimiento tributario, optimizar los recursos y contribuir a la estabilidad y crecimiento de cada negocio.',
+ accCTA:'Solicitar orientación ↗',accExplore:'Conocer servicios ↗',acc1:'Cumplimiento de obligaciones tributarias',acc2:'Control y registro de operaciones',acc3:'Elaboración de declaraciones',acc4:'Conciliaciones bancarias',acc5:'Administración de nómina',acc6:'Gestión y análisis financiero',
+ realtyIntro:'Facilitamos la compra, venta y administración de inmuebles, acompañándote en cada etapa con transparencia y atención personalizada.',
+ realtySlide1Title:'Venta de inmuebles',realtySlide1Desc:'Acompañamiento durante las distintas etapas de venta de un inmueble.',
+ realtySlide2Title:'Compra de inmuebles',realtySlide2Desc:'Orientación para tomar decisiones informadas al comprar un inmueble.',
+ realtySlide3Title:'Administración de inmuebles',realtySlide3Desc:'Gestión de intereses inmobiliarios con profesionalismo y transparencia.',
+ formSale:'Venta de inmuebles',formBuy:'Compra de inmuebles',formManage:'Administración de inmuebles',
+ demo:'Xiren Consulting',
+ demoNote:'DEMO AUREN · Xiren Consulting es un nombre provisional. WhatsApp sin conectar.'
+});
+Object.assign(T.en,{
+ top:'Xiren Consulting · Preliminary presentation',
+ heroLabel:'ACCOUNTING · TAX · FINANCE · REAL ESTATE',
+ heroDesc:'Professional services for individuals and businesses, with attentive support and solutions focused on organization and asset protection.',
+ accountingTitle:'Accounting, tax and financial services',
+ accountingDesc:'Comprehensive solutions for individuals and companies, from tax compliance to financial management.',
+ realtyDesc:'Support with buying, selling and managing properties, with professionalism and transparency.',
+ accLabel:'ACCOUNTING · TAX · FINANCE',accHeading:'Clear information. Informed decisions.',
+ accIntro:'At Xiren Consulting, we offer accounting, tax and financial services to individuals and companies. We combine personalized attention, organization and strategic analysis to support tax compliance, optimize resources and contribute to the stability and growth of each business.',
+ accCTA:'Request guidance ↗',accExplore:'Explore services ↗',acc1:'Tax compliance',acc2:'Transaction recording and control',acc3:'Tax return preparation',acc4:'Bank reconciliations',acc5:'Payroll administration',acc6:'Financial management and analysis',
+ realtyIntro:'We assist with buying, selling and managing properties, providing transparent, personalized support at every stage.',
+ realtySlide1Title:'Property sales',realtySlide1Desc:'Support through the different stages of selling a property.',
+ realtySlide2Title:'Property purchases',realtySlide2Desc:'Guidance to make informed decisions when buying a property.',
+ realtySlide3Title:'Property management',realtySlide3Desc:'Professional, transparent management of real estate interests.',
+ formSale:'Property sales',formBuy:'Property purchases',formManage:'Property management',
+ demo:'Xiren Consulting',
+ demoNote:'AUREN DEMO · Xiren Consulting is a provisional name. WhatsApp not connected.'
+});
+
+const ABOUT_COPY={es:[['Quiénes somos','Xiren Consulting es una propuesta de consultoría multidisciplinaria con atención contable, fiscal, financiera e inmobiliaria para personas y negocios.'],['Nuestro enfoque','Combinamos atención personalizada, organización y análisis estratégico para brindar información clara y oportuna a cada cliente.'],['Nuestro compromiso','Trabajamos con responsabilidad, cercanía y comunicación transparente, procurando que cada cliente comprenda sus opciones y pueda tomar decisiones con confianza.']],en:[['Who we are','Xiren Consulting is a proposed multidisciplinary firm bringing together accounting, tax, financial and real estate services for individuals and businesses.'],['Our approach','We combine personalized attention, organization and strategic analysis to provide each client with clear, timely information.'],['Our commitment','We work with responsibility, approachability and transparent communication so clients understand their options and can make informed decisions.']]};
+let currentLang=(()=>{try{return localStorage.getItem('xiren_site_language')==='en'?'en':'es'}catch(e){return 'es'}})(),aboutIndex=0;
+function showAbout(index,focus=false){aboutIndex=(index+3)%3;document.querySelectorAll('.about-tab').forEach((b,i)=>{const active=i===aboutIndex;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;if(active&&focus)b.focus()});const panel=document.querySelector('#about-panel');panel.setAttribute('aria-labelledby','about-tab-'+aboutIndex);panel.style.animation='none';void panel.offsetWidth;panel.style.animation='';document.querySelector('#about-panel-title').textContent=ABOUT_COPY[currentLang][aboutIndex][0];document.querySelector('#about-panel-copy').textContent=ABOUT_COPY[currentLang][aboutIndex][1]}
+document.querySelectorAll('.about-tab').forEach(b=>{b.addEventListener('click',()=>showAbout(Number(b.dataset.aboutIndex)));b.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();showAbout(aboutIndex+(e.key==='ArrowRight'?1:-1),true)}else if(e.key==='Home'||e.key==='End'){e.preventDefault();showAbout(e.key==='Home'?0:2,true)}})});
+let slideIndex=0;const track=document.querySelector('#realtyTrack');const dots=[...document.querySelectorAll('[data-slide]')];const slides=[...track.querySelectorAll('.realty-slide')];
+function showSlide(i,animate=true){slideIndex=(i+slides.length)%slides.length;track.scrollTo({left:slides[slideIndex].offsetLeft-track.offsetLeft,behavior:animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches?'smooth':'instant'});dots.forEach((d,j)=>{d.classList.toggle('active',j===slideIndex);if(j===slideIndex)d.setAttribute('aria-current','true');else d.removeAttribute('aria-current')})}
+document.querySelector('#realtyPrev').addEventListener('click',()=>showSlide(slideIndex-1));document.querySelector('#realtyNext').addEventListener('click',()=>showSlide(slideIndex+1));dots.forEach(d=>d.addEventListener('click',()=>showSlide(Number(d.dataset.slide))));
+let scrollSync;track.addEventListener('scroll',()=>{clearTimeout(scrollSync);scrollSync=setTimeout(()=>{const closest=slides.reduce((a,s,i)=>Math.abs(s.offsetLeft-track.offsetLeft-track.scrollLeft)<Math.abs(slides[a].offsetLeft-track.offsetLeft-track.scrollLeft)?i:a,0);slideIndex=closest;dots.forEach((d,i)=>{d.classList.toggle('active',i===closest);if(i===closest)d.setAttribute('aria-current','true');else d.removeAttribute('aria-current')})},100)});
+let autoSlide=null;function startAuto(){if(autoSlide||matchMedia('(prefers-reduced-motion: reduce)').matches)return;autoSlide=setInterval(()=>{if(!document.hidden)showSlide(slideIndex+1)},5600)}function stopAuto(){clearInterval(autoSlide);autoSlide=null}const carousel=document.querySelector('.realty-carousel');carousel.addEventListener('mouseenter',stopAuto);carousel.addEventListener('mouseleave',startAuto);carousel.addEventListener('focusin',stopAuto);carousel.addEventListener('focusout',e=>{if(!carousel.contains(e.relatedTarget))startAuto()});carousel.addEventListener('touchstart',stopAuto,{passive:true});carousel.addEventListener('touchend',startAuto,{passive:true});startAuto();
+
+function setLang(lang){if(!['es','en'].includes(lang))lang='es';currentLang=lang;try{localStorage.setItem('xiren_site_language',lang)}catch(e){};showAbout(aboutIndex);document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(T[lang][key]!==undefined)el.textContent=T[lang][key]});document.querySelectorAll('[data-i18n-html]').forEach(el=>{const key=el.dataset.i18nHtml;if(T[lang][key]!==undefined)el.innerHTML=T[lang][key]});document.querySelectorAll('[data-lang]').forEach(btn=>{const selected=btn.dataset.lang===lang;btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected))});};document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+const mb=document.querySelector('#menuBtn'),mn=document.querySelector('#mobileNav');mb.addEventListener('click',()=>{const o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',String(o))});mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mn.classList.remove('open');mb.setAttribute('aria-expanded','false')}));document.querySelector('#year').textContent=new Date().getFullYear();
+// DEMO: WhatsApp remains inactive until the client supplies an authorized phone number.
+function configureWhatsApp(number){const digits=String(number||'').replace(/\D/g,'');if(digits.length<10)return;const url='https://wa.me/'+digits+'?text='+encodeURIComponent('Hola, me gustaría solicitar información sobre sus servicios.');['waCta','waFloat'].forEach(id=>{const e=document.getElementById(id);e.href=url;e.removeAttribute('aria-disabled');e.target='_blank';e.rel='noopener noreferrer'})}
+// To activate after client approval, call configureWhatsApp('52XXXXXXXXXX') here.
+const observer=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08}):null;document.querySelectorAll('.reveal').forEach(e=>observer?observer.observe(e):e.classList.add('visible'));
+
+
+// Configure once the client provides her authorized WhatsApp number. International digits, e.g. 52XXXXXXXXXX.
+const AUREN_REALTY_WHATSAPP = '';
+const realtyForm=document.getElementById('realtyForm');
+realtyForm.addEventListener('submit',function(event){
+  event.preventDefault();
+  if(!realtyForm.reportValidity())return;
+  const phone=String(AUREN_REALTY_WHATSAPP).replace(/\D/g,'');
+  const feedback=document.getElementById('realtyFormFeedback');
+  if(phone.length<10){feedback.textContent=T[currentLang].formNotReady;return;}
+  const data=new FormData(realtyForm);
+  const serviceLabels={es:{venta:'Venta de inmuebles',compra:'Compra de inmuebles',administracion:'Administración de inmuebles'},en:{venta:'Property sales',compra:'Property purchases',administracion:'Property management'}};
+  const message=currentLang==='es'?
+    `Hola, solicito información sobre sus servicios inmobiliarios.\nNombre: ${data.get('name')}\nTeléfono: ${data.get('phone')}\nServicio: ${serviceLabels.es[data.get('service')]}\nMensaje: ${data.get('message')||'Sin mensaje adicional'}`:
+    `Hello, I would like information about your real estate services.\nName: ${data.get('name')}\nPhone: ${data.get('phone')}\nService: ${serviceLabels.en[data.get('service')]}\nMessage: ${data.get('message')||'No additional message'}`;
+  feedback.textContent=T[currentLang].formOpening;
+  const a=document.createElement('a');a.href='https://wa.me/'+phone+'?text='+encodeURIComponent(message);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();
+});
+Object.assign(T.es,{realtyFormHeading:'Solicita información',realtyFormIntro:'Cuéntanos qué necesitas y prepararemos tu mensaje para contactar al despacho.',formName:'Nombre completo',formPhone:'Teléfono',formService:'Servicio de interés',formServicePlaceholder:'Selecciona un servicio',formSale:'Venta de inmuebles',formBuy:'Compra de inmuebles',formManage:'Administración de inmuebles',formMessage:'Mensaje (opcional)',formSubmit:'Continuar por WhatsApp ↗',formPrivacy:'Al continuar, se abrirá WhatsApp con tu mensaje. No almacenamos los datos en esta página.',formNotReady:'Formulario de demostración: falta configurar el número oficial de WhatsApp.',formOpening:'Se abrirá WhatsApp para que confirmes el envío.'});
+Object.assign(T.en,{realtyFormHeading:'Request information',realtyFormIntro:'Tell us what you need and we will prepare your message to contact the firm.',formName:'Full name',formPhone:'Phone number',formService:'Service of interest',formServicePlaceholder:'Choose a service',formSale:'Property sales',formBuy:'Property purchases',formManage:'Property management',formMessage:'Message (optional)',formSubmit:'Continue on WhatsApp ↗',formPrivacy:'WhatsApp will open with your message. We do not store data on this site.',formNotReady:'Demo form: the official WhatsApp number has not been configured yet.',formOpening:'WhatsApp will open so you can confirm sending.'});
+// Translate placeholders as well as labels and keep service choice intact.
+const aurenOriginalSetLang=setLang;
+setLang=function(lang){aurenOriginalSetLang(lang);document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=T[lang][el.dataset.i18nPlaceholder]||''});document.getElementById('realtyFormFeedback').textContent='';};
+
+
+// Contenido consolidado y bilingüe. No se agrega catálogo ni base de datos.
+const SERVICE_COPY={
+ es:[
+  {tab:'Jurídicos',subtitle:'Orientación y acompañamiento',title:'Servicios jurídicos',desc:'Brindamos información y acompañamiento legal para ayudar a comprender opciones y avanzar con mayor claridad. Las especialidades jurídicas se definirán cuando el despacho las confirme.',items:['Orientación jurídica','Atención personalizada','Acompañamiento legal'],link:'Consultar disponibilidad ↗',href:'#contacto'},
+  {tab:'Contables y fiscales',subtitle:'Organización y crecimiento',title:'Servicios contables, fiscales y financieros',desc:'Apoyamos a personas físicas y morales en el cumplimiento tributario, el control de sus operaciones y la gestión de sus recursos mediante atención personalizada, información clara y análisis estratégico.',items:['Obligaciones y declaraciones fiscales','Registro y control de operaciones','Conciliaciones bancarias','Administración de nómina','Gestión y análisis financiero'],link:'Solicitar orientación ↗',href:'#contacto'},
+  {tab:'Inmobiliarios',subtitle:'Confianza para tu patrimonio',title:'Servicios inmobiliarios',desc:'Facilitamos la compra, venta y administración de inmuebles, acompañando cada etapa con profesionalismo, transparencia y atención personalizada.',items:['Compra de inmuebles','Venta de inmuebles','Administración de inmuebles'],link:'Conocer atención inmobiliaria ↗',href:'#inmobiliaria'}
+ ],
+ en:[
+  {tab:'Legal',subtitle:'Guidance and support',title:'Legal services',desc:'We provide legal information and support to help clients understand their options and move forward with confidence. Specific legal specialties are subject to confirmation by the firm.',items:['Legal guidance','Personalized assistance','Legal support'],link:'Ask about availability ↗',href:'#contacto'},
+  {tab:'Accounting and tax',subtitle:'Organization and growth',title:'Accounting, tax and financial services',desc:'We support individuals and businesses with tax compliance, transaction management and financial administration through personalized attention, clear information and strategic analysis.',items:['Tax compliance and returns','Transaction records and controls','Bank reconciliations','Payroll administration','Financial management and analysis'],link:'Request guidance ↗',href:'#contacto'},
+  {tab:'Real estate',subtitle:'Confidence for your assets',title:'Real estate services',desc:'We help clients buy, sell and manage properties, providing professional, transparent and personalized support throughout each stage.',items:['Property purchases','Property sales','Property management'],link:'Explore real estate assistance ↗',href:'#inmobiliaria'}
+ ]
+};
+Object.assign(T.es,{serviceTabLegal:'Jurídicos',serviceTabAccounting:'Contables y fiscales',serviceTabRealty:'Inmobiliarios',aboutExplore:'Conoce nuestros servicios ↗'});
+Object.assign(T.en,{serviceTabLegal:'Legal',serviceTabAccounting:'Accounting and tax',serviceTabRealty:'Real estate',aboutExplore:'Explore our services ↗'});
+const ABOUT_TITLES={es:['Una visión integral y cercana.','Cada decisión merece claridad.','Confianza en cada paso.'],en:['A close, comprehensive vision.','Every decision deserves clarity.','Confidence at every step.']};
+let serviceIndex=1;
+function showService(index,focus=false){
+ serviceIndex=(index+3)%3;
+ const data=SERVICE_COPY[currentLang][serviceIndex];
+ document.querySelectorAll('.service-tab').forEach((tab,i)=>{let active=i===serviceIndex;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;if(active&&focus)tab.focus()});
+ const panel=document.getElementById('service-panel');panel.setAttribute('aria-labelledby','service-tab-'+serviceIndex);panel.style.animation='none';void panel.offsetWidth;panel.style.animation='';
+ document.getElementById('service-subtitle').textContent=data.subtitle;
+ document.getElementById('service-title').textContent=data.title;
+ document.getElementById('service-description').textContent=data.desc;
+ document.getElementById('service-link').textContent=data.link;
+ document.getElementById('service-link').href=data.href;
+
+
+ document.getElementById('service-capabilities').replaceChildren(...data.items.map(item=>{const el=document.createElement('div');el.className='service-capability';el.textContent=item;return el}));
+}
+document.querySelectorAll('.service-tab').forEach(tab=>{tab.addEventListener('click',()=>showService(Number(tab.dataset.serviceTab)));tab.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();showService(serviceIndex+(event.key==='ArrowRight'?1:-1),true)}else if(event.key==='Home'||event.key==='End'){event.preventDefault();showService(event.key==='Home'?0:2,true)}})});
+
+
+
+
+const originalShowAbout=showAbout;
+showAbout=function(index,focus=false){originalShowAbout(index,focus);document.getElementById('about-panel-title').textContent=ABOUT_TITLES[currentLang][aboutIndex]};
+const previousSetLang=setLang;
+setLang=function(lang){previousSetLang(lang);showService(serviceIndex);showAbout(aboutIndex)};
+
+setLang(currentLang);
+
+// Panel informativo, no banner de consentimiento: no habilita cookies ni píxeles.
+Object.assign(T.es,{privacyNoticeTitle:'Nuestro aviso de privacidad',privacyNoticeBody:'Este sitio incluye un formulario que prepara tu consulta para WhatsApp y utiliza recursos externos para mostrar imágenes y tipografías. Consulta cómo tratamos la información y qué tecnologías utiliza el sitio.',privacyNoticeHint:'Este aviso es informativo; no activa rastreadores.',privacyNoticeDismiss:'Entendido',privacyReopen:'Ver avisos'});
+Object.assign(T.en,{privacyNoticeTitle:'Our privacy notice',privacyNoticeBody:'This website includes a form that prepares your enquiry for WhatsApp and loads external images and fonts. Learn how information is handled and which technologies are used.',privacyNoticeHint:'This notice is informational; it does not enable trackers.',privacyNoticeDismiss:'Got it',privacyReopen:'View notices'});
+// Traducciones visibles de enlaces legales y explicación del formulario.
+Object.assign(T.es,{legalPrivacy:'Aviso de privacidad',legalCookies:'Uso de cookies',legalTerms:'Términos de uso',formPrivacyAck:'Antes de continuar, consulta nuestro <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Aviso de privacidad</a>. Al continuar, se abrirá WhatsApp para que decidas si deseas enviar tu mensaje.'});
+Object.assign(T.en,{legalPrivacy:'Privacy notice',legalCookies:'Cookies',legalTerms:'Terms of use',formPrivacyAck:'Before continuing, please read our <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Privacy notice</a>. WhatsApp will open so you can decide whether to send your message.'});
+const aurenLangWithPrivacy=setLang;
+setLang=function(lang){aurenLangWithPrivacy(lang)};
+const notice=document.getElementById('privacyNotice');
+const noticeStorageKey='xiren-privacy-information-read-v1';
+let noticeAcknowledged=false;
+try{noticeAcknowledged=localStorage.getItem(noticeStorageKey)==='yes'}catch(error){/* Privacy notice works if storage is disabled. */}
+function openPrivacyNotice(){notice.hidden=false;notice.classList.add('is-visible')}
+function closePrivacyNotice(){notice.classList.remove('is-visible');notice.hidden=true;try{localStorage.setItem(noticeStorageKey,'yes')}catch(error){/* Keep functioning without storage. */}}
+document.getElementById('privacyNoticeDismiss').addEventListener('click',closePrivacyNotice);
+document.getElementById('privacyReopen').addEventListener('click',openPrivacyNotice);
+setLang(currentLang);
+if(!noticeAcknowledged)openPrivacyNotice();
+</script>
+</body>
+</html>
