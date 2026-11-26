@@ -115,6 +115,22 @@
 .service-capability{display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid var(--line);padding:14px 0;font-size:13px;color:#4e4542;line-height:1.5}
 .service-capability:before{content:'';flex:none;width:6px;height:6px;background:var(--brick);transform:rotate(45deg);margin-top:7px}
 
+/* Xiren · especialidades jurídicas desplegables */
+.service-capabilities--groups{display:block;min-width:0}
+.legal-service-group{border-bottom:1px solid var(--line)}
+.legal-service-group:first-child{border-top:1px solid var(--line)}
+.legal-service-summary{display:flex;justify-content:space-between;align-items:center;gap:14px;cursor:pointer;list-style:none;padding:15px 3px;font-weight:600;font-size:13px;line-height:1.45;color:var(--ink)}
+.legal-service-summary::-webkit-details-marker{display:none}
+.legal-service-summary:focus-visible{outline:2px solid var(--brick);outline-offset:3px}
+.legal-service-chevron{font-size:21px;color:var(--brick-dark);transition:transform .2s ease;line-height:1}
+.legal-service-group[open] .legal-service-chevron{transform:rotate(180deg)}
+.legal-service-list{list-style:none;margin:0;padding:0 3px 14px}
+.legal-service-list li{position:relative;padding:5px 0 5px 16px;font-size:12.5px;line-height:1.55;color:var(--muted)}
+.legal-service-list li:before{content:'';position:absolute;left:2px;top:13px;width:5px;height:5px;background:var(--brick);border-radius:50%}
+@media(max-width:760px){.service-panel:has(.service-capabilities--groups){align-items:start}}
+@media(prefers-reduced-motion:reduce){.legal-service-chevron{transition:none}}
+
+
 
 
 
@@ -369,12 +385,12 @@ setLang=function(lang){aurenOriginalSetLang(lang);document.querySelectorAll('[da
 // Contenido consolidado y bilingüe. No se agrega catálogo ni base de datos.
 const SERVICE_COPY={
  es:[
-  {tab:'Jurídicos',subtitle:'Orientación y acompañamiento',title:'Servicios jurídicos',desc:'Brindamos información y acompañamiento legal para ayudar a comprender opciones y avanzar con mayor claridad. Las especialidades jurídicas se definirán cuando el despacho las confirme.',items:['Orientación jurídica','Atención personalizada','Acompañamiento legal'],link:'Consultar disponibilidad ↗',href:'#contacto'},
+  {tab:'Jurídicos',subtitle:'Profesionalismo, confidencialidad y compromiso',title:'Servicios jurídicos',desc:'Ofrecemos orientación jurídica integral y acompañamiento principalmente en materia corporativa, contractual, societaria, propiedad intelectual y asuntos contenciosos. Buscamos proteger tus intereses, prevenir riesgos y brindar certeza jurídica con soluciones adaptadas a cada situación.',groups:[{title:'Propiedad intelectual y marcas',items:['Análisis de viabilidad de registro de marca','Identificación de la clase Niza','Solicitud de registro de marca','Declaración de uso de marca','Renovación de marca','Licencia de uso de marca']},{title:'Contratos y derecho societario',items:['Elaboración y revisión de contratos','Constitución y administración de sociedades','Análisis y creación de sociedades']},{title:'Otras materias jurídicas',items:['Derecho mercantil','Derecho civil','Asuntos contenciosos']}],link:'Consulta todos nuestros servicios ↗',href:'#contacto'},
   {tab:'Contables y fiscales',subtitle:'Organización y crecimiento',title:'Servicios contables, fiscales y financieros',desc:'Apoyamos a personas físicas y morales en el cumplimiento tributario, el control de sus operaciones y la gestión de sus recursos mediante atención personalizada, información clara y análisis estratégico.',items:['Obligaciones y declaraciones fiscales','Registro y control de operaciones','Conciliaciones bancarias','Administración de nómina','Gestión y análisis financiero'],link:'Solicitar orientación ↗',href:'#contacto'},
   {tab:'Inmobiliarios',subtitle:'Confianza para tu patrimonio',title:'Servicios inmobiliarios',desc:'Facilitamos la compra, venta y administración de inmuebles, acompañando cada etapa con profesionalismo, transparencia y atención personalizada.',items:['Compra de inmuebles','Venta de inmuebles','Administración de inmuebles'],link:'Conocer atención inmobiliaria ↗',href:'#inmobiliaria'}
  ],
  en:[
-  {tab:'Legal',subtitle:'Guidance and support',title:'Legal services',desc:'We provide legal information and support to help clients understand their options and move forward with confidence. Specific legal specialties are subject to confirmation by the firm.',items:['Legal guidance','Personalized assistance','Legal support'],link:'Ask about availability ↗',href:'#contacto'},
+  {tab:'Legal',subtitle:'Professionalism, confidentiality and commitment',title:'Legal services',desc:'We provide comprehensive legal guidance and support, primarily in corporate, contract and company law, intellectual property and contentious matters. We aim to protect your interests, prevent risks and bring legal certainty through solutions tailored to each situation.',groups:[{title:'Intellectual property and trademarks',items:['Trademark registration feasibility analysis','Identification of the Nice Classification class','Trademark registration applications','Declarations of trademark use','Trademark renewals','Trademark licensing']},{title:'Contracts and corporate law',items:['Drafting and review of contracts','Company formation and administration','Analysis and establishment of companies']},{title:'Other legal matters',items:['Commercial law','Civil law','Contentious matters']}],link:'Ask about all our services ↗',href:'#contacto'},
   {tab:'Accounting and tax',subtitle:'Organization and growth',title:'Accounting, tax and financial services',desc:'We support individuals and businesses with tax compliance, transaction management and financial administration through personalized attention, clear information and strategic analysis.',items:['Tax compliance and returns','Transaction records and controls','Bank reconciliations','Payroll administration','Financial management and analysis'],link:'Request guidance ↗',href:'#contacto'},
   {tab:'Real estate',subtitle:'Confidence for your assets',title:'Real estate services',desc:'We help clients buy, sell and manage properties, providing professional, transparent and personalized support throughout each stage.',items:['Property purchases','Property sales','Property management'],link:'Explore real estate assistance ↗',href:'#inmobiliaria'}
  ]
@@ -395,7 +411,26 @@ function showService(index,focus=false){
  document.getElementById('service-link').href=data.href;
 
 
- document.getElementById('service-capabilities').replaceChildren(...data.items.map(item=>{const el=document.createElement('div');el.className='service-capability';el.textContent=item;return el}));
+ const capabilities=document.getElementById('service-capabilities');
+ capabilities.classList.toggle('service-capabilities--groups',Boolean(data.groups));
+ if(data.groups){
+  const nodes=data.groups.map((group,i)=>{
+   const details=document.createElement('details');details.className='legal-service-group';
+   if(i===0)details.open=true;
+   const summary=document.createElement('summary');summary.className='legal-service-summary';
+   const label=document.createElement('span');label.textContent=group.title;
+   const arrow=document.createElement('span');arrow.className='legal-service-chevron';arrow.setAttribute('aria-hidden','true');arrow.textContent='⌄';
+   summary.append(label,arrow);
+   const list=document.createElement('ul');list.className='legal-service-list';
+   group.items.forEach(item=>{const li=document.createElement('li');li.textContent=item;list.appendChild(li)});
+   details.append(summary,list);
+   details.addEventListener('toggle',()=>{if(details.open)capabilities.querySelectorAll('.legal-service-group').forEach(other=>{if(other!==details)other.open=false})});
+   return details;
+  });
+  capabilities.replaceChildren(...nodes);
+ }else{
+  capabilities.replaceChildren(...data.items.map(item=>{const el=document.createElement('div');el.className='service-capability';el.textContent=item;return el}));
+ }
 }
 document.querySelectorAll('.service-tab').forEach(tab=>{tab.addEventListener('click',()=>showService(Number(tab.dataset.serviceTab)));tab.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();showService(serviceIndex+(event.key==='ArrowRight'?1:-1),true)}else if(event.key==='Home'||event.key==='End'){event.preventDefault();showService(event.key==='Home'?0:2,true)}})});
 
